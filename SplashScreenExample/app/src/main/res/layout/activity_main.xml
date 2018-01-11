@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jamores.splashscreenexample.MainActivity"
+    android:background="@drawable/degradado">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:src="@mipmap/ic_clever_logo"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:ems="11"
+        android:hint="Nombre"
+        android:inputType="textPersonName|textAutoCorrect|textCapWords"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:focusable="true"
+        android:backgroundTint="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/nombre"
+        android:layout_below="@+id/nombre"
+        android:layout_marginTop="11dp"
+        android:ems="11"
+        android:hint="Apellido/s"
+        android:inputType="textPersonName|textAutoCorrect|textCapWords"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/apellidos"
+        android:layout_alignStart="@+id/apellidos"
+        android:layout_below="@+id/apellidos"
+        android:layout_marginTop="22dp"
+        android:entries="@array/paises"
+        android:backgroundTint="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/borde_redondo"
+        android:text="Siguiente"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/iconoUsuario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="11dp"
+        android:layout_toStartOf="@+id/nombre"
+        app:srcCompat="@drawable/ic_usuario"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColorHint="@android:color/white"
+        android:hint="Teléfono"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/apellidos"
+        android:layout_toStartOf="@+id/apellidos"
+        app:srcCompat="@drawable/ic_usuario"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginTop="11dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_toStartOf="@+id/spinner"
+        app:srcCompat="@drawable/ic_flag"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/editText2"
+        app:srcCompat="@drawable/ic_phone_receiver"
+        android:layout_marginTop="11dp"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
