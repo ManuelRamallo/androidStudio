@@ -1,9 +1,11 @@
 package com.jamores.splashscreenexample;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button clickButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
         clickButton = findViewById(R.id.button);
 
+
         clickButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
                 EditText nombre = findViewById(R.id.nombre);

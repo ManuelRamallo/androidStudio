@@ -56,10 +56,13 @@
         android:layout_alignEnd="@+id/apellidos"
         android:layout_alignStart="@+id/apellidos"
         android:layout_below="@+id/apellidos"
-        android:layout_marginTop="22dp"
         android:entries="@array/paises"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/mybg"
         android:backgroundTint="@android:color/white"
-        />
+
+    />
+
 
     <Button
         android:id="@+id/button"
